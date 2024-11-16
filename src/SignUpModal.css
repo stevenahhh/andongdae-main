@@ -1,0 +1,88 @@
+/* src/components/SignUpModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #333;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  color: #fff;
+}
+
+.modal-content h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-container .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input-container input {
+  width: calc(100% - 20px);
+  padding: 10px 10px 10px 30px;
+  border-radius: 20px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-container input::placeholder {
+  color: #bbb;
+}
+
+.signup-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.close-button:hover {
+  color: #ddd;
+}

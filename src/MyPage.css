@@ -1,0 +1,41 @@
+/* src/MyPage.css */
+
+.my-page-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* 배경을 어두운 반투명 색상으로 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* 모달이 다른 요소들 위에 표시되도록 설정 */
+}
+
+.my-page-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 48px;
+  cursor: pointer;
+  z-index: 1100;
+  /* 버튼이 모달 내용 위에 표시되도록 설정 */
+}
+
+.close-btn:hover {
+  color: red;
+}
